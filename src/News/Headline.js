@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
-import { Card } from "react-native-elements";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
+import { Card, Image, Divider } from "react-native-elements";
 
 const Headline = () => {
 	return (
@@ -14,11 +14,13 @@ const Headline = () => {
 						uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg"
 					}}
 					style={{ height: 200, width: 300 }}
+					PlaceholderContent={<ActivityIndicator />}
 				/>
 				<Text style={{ marginBottom: 10 }}>
 					The idea with React Native Elements is more about component structure than actual design.
 				</Text>
 			</Card>
+			<Divider style={styles.divider} />
 		</View>
 	);
 };
@@ -31,8 +33,8 @@ const styles = StyleSheet.create({
 		borderColor: "#d6d7da",
 		height: 150
 	},
-	title: {
-		marginBottom: 0
+	divider: {
+		marginTop: 10
 	}
 });
 
