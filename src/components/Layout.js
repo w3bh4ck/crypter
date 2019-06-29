@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import TitleBar from "./TitleBar";
 import Headline from "../News/Headline";
+import { Card, ListItem, Button, Icon } from "react-native-elements";
 
 class Layout extends Component {
 	render() {
