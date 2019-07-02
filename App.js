@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-import { Button, ThemeProvider } from "react-native-elements";
+import { ThemeProvider } from "react-native-elements";
 import Layout from "./src/components/Layout";
 
 const instructions = Platform.select({
