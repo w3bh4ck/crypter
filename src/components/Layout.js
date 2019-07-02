@@ -3,6 +3,7 @@ import { Text, View, Image } from "react-native";
 import TitleBar from "./TitleBar";
 import Headline from "../News/Headline";
 import { Card, ListItem, Button, Icon } from "react-native-elements";
+import NewsList from "../News/NewsList";
 
 class Layout extends Component {
 	render() {
@@ -10,6 +11,7 @@ class Layout extends Component {
 			<View>
 				<TitleBar />
 				<Headline />
+				<NewsList />
 			</View>
 		);
 	}
