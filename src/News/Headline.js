@@ -1,26 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator, ImageBackground } from "react-native";
 import { Card, Image, Divider } from "react-native-elements";
 
 const Headline = () => {
 	return (
 		<View>
-			{/* <View style={styles.container}>
-				<Text style={styles.title}>Title</Text>
-			</View> */}
-			<Card title="Trending">
+			<View style={styles.container}>
 				<Image
-					source={{
-						uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg"
-					}}
-					style={{ height: 200, width: 300 }}
-					PlaceholderContent={<ActivityIndicator />}
+					style={{ width: "100%", height: "100%" }}
+					resizeMode={"cover"}
+					source={{ uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg" }}
+					style={styles.trendingImage}
 				/>
-				<Text style={{ marginBottom: 10 }}>
-					The idea with React Native Elements is more about component structure than actual design.
-				</Text>
-			</Card>
-			<Divider style={styles.divider} />
+				<Text>News Headline</Text>
+			</View>
 		</View>
 	);
 };
@@ -28,13 +21,23 @@ const Headline = () => {
 const styles = StyleSheet.create({
 	container: {
 		margin: 5,
-		borderRadius: 4,
+		borderRadius: 10,
 		borderWidth: 0.5,
 		borderColor: "#d6d7da",
 		height: 150
 	},
 	divider: {
 		marginTop: 10
+	},
+	trendingImage: {
+		borderRadius: 10,
+		width: "100%",
+		height: "100%"
+	},
+	trendingText: {
+		marginTop: 120,
+		fontSize: 22,
+		position: "absolute"
 	}
 });
 
