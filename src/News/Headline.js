@@ -18,7 +18,6 @@ const Headline = () => {
 					featured
 					caption="Some Caption Text"
 				/>
-				;<Text>News Headline</Text>
 			</View>
 		</View>
 	);
