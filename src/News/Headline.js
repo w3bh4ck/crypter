@@ -6,17 +6,11 @@ const Headline = () => {
 	return (
 		<View>
 			<View style={styles.container}>
-				{/* <Image
+				<Image
 					style={{ width: "100%", height: "100%" }}
 					resizeMode={"cover"}
 					source={{ uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg" }}
 					style={styles.trendingImage}
-				/> */}
-				<Tile
-					imageSrc={{ uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg" }}
-					title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolore exercitationem"
-					featured
-					caption="Some Caption Text"
 				/>
 			</View>
 		</View>
