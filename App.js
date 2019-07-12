@@ -11,7 +11,7 @@ import React, { Component } from "react";
 // import { ThemeProvider } from "react-native-elements";
 // import Layout from "./src/components/Layout";
 import { mapping, light as lightTheme } from "@eva-design/eva";
-import { ApplicationProvider, Layout, Text } from "react-native-ui-kitten";
+import { ApplicationProvider, Layout, Text, Button } from "react-native-ui-kitten";
 import Navigation from "./src/components/Navigation";
 
 // const instructions = Platform.select({
@@ -21,8 +21,10 @@ import Navigation from "./src/components/Navigation";
 
 const App = () => (
 	<ApplicationProvider mapping={mapping} theme={lightTheme}>
-		<Navigation title="Crypto" />
-		<Layout style={{ flex: 1 }} />
+		<Layout style={{ flex: 1 }}>
+			<Navigation title="title" />
+			<Button>Switch</Button>
+		</Layout>
 	</ApplicationProvider>
 );
 
