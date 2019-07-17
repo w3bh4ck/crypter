@@ -6,13 +6,13 @@ const NewsItem = () => {
 	return (
 		<View>
 			<Card>
-				{/* <ListItem
+				<ListItem
 					title={"This is a news Item"}
 					subtitle={"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "}
 					leftAvatar={{
 						source: { uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg" }
 					}}
-				/> */}
+				/>
 			</Card>
 		</View>
 	);
