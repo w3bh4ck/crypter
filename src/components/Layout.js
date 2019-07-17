@@ -9,7 +9,6 @@ class Layout extends Component {
 	render() {
 		return (
 			<View>
-				<TitleBar />
 				<Headline />
 				<NewsList />
 			</View>

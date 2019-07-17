@@ -17,15 +17,6 @@ const Headline = () => {
 			</View>
 
 			<Divider style={styles.divider} />
-
-			<View style={styles.container}>
-				{/* <Image
-					style={{ width: "100%", height: "100%" }}
-					resizeMode={"cover"}
-					source={{ uri: "https://www.dailynews.com/wp-content/uploads/2017/09/img_3776.jpg" }}
-					style={styles.trendingImage}
-				/> */}
-			</View>
 		</View>
 	);
 };
